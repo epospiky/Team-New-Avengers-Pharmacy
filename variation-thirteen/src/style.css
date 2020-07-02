@@ -1,0 +1,141 @@
+.container-fluid{
+    padding: 0;
+}
+[class^="col-"]{
+    padding: 0;
+}
+.col-xs-4{
+    flex: 33.333333333%;
+    max-width: 33.33333333333%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.col-xs-3{
+    flex: 25%;
+    max-width: 25%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    padding-left: 0.1rem!important;
+    padding-right: 0.1rem!important;
+}
+.col-xs-12{
+    width: 100%;
+}
+.row{
+    margin: 0;
+}
+header{
+    background: #092C4C;
+}
+.navbar-brand{
+    margin-left: 5rem;
+}
+.navbar-brand img{
+    height: 40px;
+}
+nav{
+    background: #092C4C;
+    border-bottom-color: #FFFFFF;
+}
+ul{
+    margin: 0 auto;
+    margin-right: 3rem!important;
+}
+.nav-item{
+    padding-right: 2rem;
+}
+.nav-link{
+    color:#FFFFFF!important;
+}
+.nav-link img{
+    height: 15px;
+}
+hr.navend{
+    border:none;
+    border-bottom-style:solid ;
+    border-bottom-width:1px;
+    border-bottom-color: #FFFFFF;
+    padding: 0;
+    margin: 0;;
+}
+.services-sec{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    box-shadow: 2px 8.5px 12.2px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    padding: 5rem;
+}
+.det-cont{
+    padding-left: 5rem;
+    padding-top: 3rem;
+font-family: 'Inter';
+font-style: normal;
+font-weight: normal;
+line-height: 28px;
+color: #FFFFFF;
+}
+span.det-cont-btn{
+    display: block;
+
+}
+span.det-cont-btn a{
+    text-decoration: none;
+    background: #F2994A;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: .8rem 3.5rem;
+}
+.card{
+    width: 18rem;
+    border: none;
+    height: 350px;
+    font-size: 14px;
+}
+.card img{
+    height: 50%;
+}
+.card-body{
+    border-radius: 5px;
+    box-shadow: 0 8.5px 12.2px rgba(0, 0, 0, 0.12)
+}
+ .carousel-inner, .prod .row{
+    margin: 0 auto!important;
+}
+.carousel-header{
+    padding-left: 1rem;
+}
+.carousel-foot{
+    display: flex;
+    justify-content: center;
+    background: #F2994A;
+    margin:0 auto;
+    color: #FFFFFF;
+    border-radius: 8px;
+    width: 40%;
+}
+.carousel-foot img{
+    height: 100px;
+}
+.par{
+    background: #092C4C;
+    margin: .5rem;
+    padding: .5rem;
+    border-radius: 5px;
+}
+.product{
+    margin-top: 3rem;
+}
+.prod{
+    background: #FFA654;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.prod h4{
+    color: #3774DF;
+    text-align: center;
+    font-weight: 900;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
