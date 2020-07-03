@@ -82,6 +82,9 @@ hr.navend{
     padding: 5rem;
 
 }
+.mobile-viewall{
+    display: none;
+}
 .services-sec .card{
     transition: .3s ease-in-out;
 }
@@ -306,4 +309,122 @@ p.foot{
         padding: 0;
         margin: 0;
     }
+    .services-sec .card{
+        height: auto;
+    }
+    .services-sec .card img{
+        height: auto;
+    }
+    .carousel-header{
+        text-align: center;
+    }
+    .services-sec .card-body{
+        padding: 10px;
+        text-align: center;
+    }
+    .services-sec .col-xs-4:nth-child(n+5){
+        display: none;
+    }
+    .services-sec h5{
+        font-size: 1rem;
+        color: black;
+    }
+    .services-sec .card-text{
+        display: none;
+    }
+    .mobile-viewall{
+        display: block;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-viewall a{
+        text-decoration: none;
+    }
+    .product{
+        display: none;
+    }
+.product-mobile{
+    background: #FFB876;
+    padding: 1rem 2rem;
+}
+.product-mobile .row{
+    padding: 0.5rem 0;
+    height: auto;
+}
+.product-mobile .card-body{
+    background: #FFFFFF;
+    padding-left:0.7rem ;
+    padding-right:0.7rem ;
+    padding-top: 1rem;
+}
+.product-mobile img{
+    height: 100%;
+}
+.product-mobile h4{
+    color: #3774DF;
+    text-align: center;
+}
+.product-mobile h5{
+    color: #000000;
+    font-size: 1rem;
+}
+.product-mobile p{
+    font-size: 16px;
+}
+.covid-19{
+    padding-left: unset;
+    padding-right: unset;
+    font-size: unset;
+    line-height: unset;
+    padding-bottom: .5rem;
+}
+.covid-19-tips{
+    padding: 0;
+    padding-top: .5rem;
+    margin: 0px;
+}
+.covid-19-tips h4{
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+.covid-19-tips p:last-child{
+    display: none;
+}
+.covid-19-tips p:first-child{
+    visibility: collapse;
+    padding: 0px;
+    margin: 0px;
+}
+.covid-19-tips p:first-child::after{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    bottom: 0;
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+    visibility: visible;
+    margin: auto!important;
+}
+.covid-19-img{
+    padding: unset;
+}
+.covid-19-img img{
+    height: 100%;
+}
+.contact-info{
+    padding: .5rem 0;
+}
+.contact-info .row .col-md-5{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.social{
+    padding-right: 0px;
+}
+.subscribe input[type="text"]{
+    width: 70%;
+}
+footer .row div:nth-child(2){
+    max-width: 80%!important;
+
+}
 }
