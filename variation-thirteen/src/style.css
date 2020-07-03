@@ -26,6 +26,9 @@
 .row{
     margin: 0;
 }
+.img-responsive{
+    width:100%;
+}
 header{
     background: #092C4C;
 }
@@ -48,9 +51,20 @@ ul{
 }
 .nav-link{
     color:#FFFFFF!important;
+    transition: color .5s;
+}
+.nav-link:hover, .nav-link:active, .active .nav-link{
+    color: #FFA654!important;
 }
 .nav-link img{
     height: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.navbar-toggler{
+    color: #FFFFFF!important;
+    border-color: #FFFFFF!important;
+    background-color: #FFFFFF!important;
 }
 hr.navend{
     border:none;
@@ -66,6 +80,13 @@ hr.navend{
     box-shadow: 2px 8.5px 12.2px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
     padding: 5rem;
+
+}
+.services-sec .card{
+    transition: .3s ease-in-out;
+}
+.services-sec .card:hover{
+    transform: scale(1.1);
 }
 .det-cont{
     padding-left: 5rem;
@@ -78,7 +99,12 @@ color: #FFFFFF;
 }
 span.det-cont-btn{
     display: block;
-
+    
+}
+span.det-cont-btn a:hover{
+    border: 1px solid #F2994A;
+    color: #FFFFFF;
+    box-shadow: inset 400px 0 0 0 #092C4C;
 }
 span.det-cont-btn a{
     text-decoration: none;
@@ -86,6 +112,7 @@ span.det-cont-btn a{
     border-radius: 5px;
     color: #FFFFFF;
     padding: .8rem 3.5rem;
+    transition: ease-in-out 0.4s;
 }
 .card{
     width: 18rem;
@@ -118,6 +145,24 @@ span.det-cont-btn a{
 .carousel-foot img{
     height: 100px;
 }
+.car-icon{
+    color: #092C4C;
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 0!important;
+}
+.control-icon-next, .control-icon-prev{
+    border-radius: 50%;
+    border: 1px solid #092C4C;
+    padding: 5px;
+}
+.control-icon-next{
+    position: absolute;
+    right: 1rem!important;
+}
+.control-icon-prev{
+    margin-right: 1rem;
+}
 .par{
     background: #092C4C;
     margin: .5rem;
@@ -138,4 +183,127 @@ span.det-cont-btn a{
     font-weight: 900;
     font-size: 2rem;
     padding-top: 1rem;
+}
+.covid-19{
+    padding: 2rem 1.5rem;
+}
+.covid-19-tips{
+    margin-left: -12px;
+    padding: 0 2rem;
+    border-radius: 5px;
+    box-shadow: 0 8.5px 12.2px rgba(0, 0, 0, 0.12)
+}
+.covid-19-tips h4{
+    text-align: center;
+    font-weight: 900;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+.covid-19-tips p{
+    padding: 0 1.5rem;
+}
+footer{
+    background: #092C4C;
+    color: #FFFFFF;
+    padding-bottom: 0.4rem;
+}
+footer .col-md-4{
+    padding:0 3rem;
+    padding-top: 2rem;
+}
+footer .row div:nth-child(2){
+    max-width: 30%!important;
+    margin: auto;
+    padding:0 4rem ;
+}
+footer span, h5{
+    color: #F2994A;
+}
+footer hr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    width: 96%;
+}
+p.foot{
+    text-align: center;
+}
+.contact-info{
+    padding:2rem 2rem;
+}
+.contact-info h3, .contact-info h5{
+    color: #F2994A;
+    text-align: center;
+}
+.contact-info h5{
+    color: #3774DF;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+.social li{
+    list-style-type: none;
+    display: inline-block;
+    transition: .3s ease-in-out;
+}
+.social li:hover{
+    transform: scale(1.2);
+}
+.subscribe{
+    padding-top: 1rem;
+}
+.subscribe input[type="text"]{
+    border-radius: 2px;
+    border: 1px solid #BDBDBD;
+    outline: none;
+    padding:.6rem .4rem ;
+    width: 60%;
+}
+.subscribe input[type="text"]:focus{
+    border:1px solid #F2994A;
+}
+.subscribe input[type="submit"]{
+    padding: .6rem 1.2rem;
+    position: absolute;
+    margin-left: -3px;
+    outline: none;
+    border: 1px solid #3774DF;
+    border-radius: 5px;
+    background: #3774DF;
+    color: #FFFFFF;
+    transition: ease-in-out 0.4s;
+}
+.subscribe input[type="submit"]:hover{
+    color: #6e6767;
+    box-shadow: inset 0 0 0 50px #F2994A
+    
+}
+
+
+
+/***************************************************************************
+**************************mobile responsiveness*****************************
+****************************************************************************/
+@media  only screen and (max-width:768px){
+    .col-xs-6{
+        max-width: 50%;
+    }
+    .det-cont{
+        padding-left: 0;
+        text-align: center;
+        padding-top: 3px;
+        font-size: 12px;
+        line-height: 15px;
+        padding-bottom: 1rem;
+    }
+    .det-cont-img{
+        height: auto;
+    }
+    span.det-cont-btn a{
+        padding: .5rem 1rem;
+    }
+    .services-sec {
+        padding: 0;
+        margin: 0;
+    }
 }
